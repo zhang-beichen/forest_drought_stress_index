@@ -1,4 +1,3 @@
-#%%
 import arcpy
 import glob
 import os
@@ -23,4 +22,3 @@ for f in NDVI_list:
     #arcpy.ProjectRaster_management(f, out_prj+fname, t_prj, "NEAREST", cellsize,"#" , "#", s_prj, "#")
     arcpy.Resample_management(f,out_rmpl+fname, cellsize, "CUBIC")
     print(fname)
-# %%
